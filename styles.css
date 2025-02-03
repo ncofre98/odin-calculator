@@ -1,0 +1,31 @@
+body {
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; */
+}
+
+.casing {
+    background-color: #5A5D67;
+    width: 420px;
+    height: 600px;
+}
+
+.calculator {
+    background-color: #A4A6A7;
+    height: 98%;
+    width: 95%;
+}
+
+.casing,
+.calculator {
+    border-radius: 24px;
+}
+
+/* Helpers */
+
+.is-centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
