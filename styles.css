@@ -1,5 +1,5 @@
 :root {
-    --main-color: #B1B4B9;
+    --main-color: #D1D1D3;
     --secondary-color: #5D5A6B;
 }
 
@@ -11,7 +11,6 @@
 
 body {
     font-family: 'Arial', 'Verdana', sans-serif;
-    box-sizing: border-box;
 }
 
 .brand,
@@ -30,23 +29,23 @@ body {
 
 .model {
     font-family: 'Times New Roman';
+    font-size: 14px;
     font-style: italic;
     margin: 16px 0 0 6px;
     line-height: 1;
 }
 
 .model span {
-    font-size: 9px;
+    font-size: 8px;
     color: #016b4a;
     margin-left: -6px;
-    font-weight: 600;
-
+    font-weight: bold;
 }
 
 .solar-panel {
     background-color: black;
-    height: 60%;
-    width: 150px;
+    height: 100%;
+    width: 100%;
     border-radius: 6px;
 }
 
@@ -70,6 +69,7 @@ body {
 .calculator__brand {
     display: flex;
     justify-content: space-between;
+    padding: 5px;
 }
 
 .calculator__brand-left-side {
@@ -85,8 +85,8 @@ body {
 }
 
 .calculator__brand-right-side p {
-    font-size: 10px;
-    margin: 4px 0 0 0;
+    font-size: 8px;
+    margin: 4px 0 0 auto;
 }
 
 .casing,
@@ -100,6 +100,26 @@ body {
     resize: none;
     margin: 10px 0;
     background-color:#126349;
+}
+
+/* Buttons */
+
+.shift-button,
+.alpha-button,
+.replay-button,
+.mode-setup-button,
+.on-button {
+    background-color: #7A7498;
+    border: none;
+    padding: 6px;
+    border-radius: 8px;
+    color: #fff;
+}
+
+.replay-button {
+    padding: 18px;
+    border-radius: 20px;
+    margin-bottom: -20px;
 }
 
 /* Helpers */

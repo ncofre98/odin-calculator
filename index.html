@@ -27,22 +27,38 @@
                 <textarea name="" id="calculatorScreen" class="calculator__screen"></textarea>
                 <div class="calculator__buttons">
                     <!-- First row -->
-                    <button id="shiftBtn" class="shift-btn">SHIFT</button>
+                    <button id="shiftBtn" class="shift-button">SHIFT</button>
                     <button id="alphaBtn" class="alpha-button">ALPHA</button>
-                    <button id="modeBtn" class="mode-button">MODE</button>
-                    <button id="setupBtn" class="setup-button">SETUP</button>
+                    <button id="replayBtn" class="replay-button">REPLAY</button>
+                    <button id="modeSetupBtn" class="mode-setup-button">MODE SETUP</button>
                     <button id="onBtn" class="on-button">ON</button>
 
                     <!-- Second row -->
                     <button id="calcBtn" class="calc-button">CALC</button>
-                    <button id="integralBtn" class="integral-button">∫dx</button>
-                    <button id="differentialBtn" class="differential-button">d/dx</button>
+                    <button id="integralDiferentialBtn" class="integral-diferential-button">∫dx d/dx</button>
+                    <button id="inverseBtn" class="inverse-button">x<sup>-1</sup></button>
                     <button id="logBaseBtn" class="log-base-button">logₐ</button>
-                    <button id="lnBtn" class="ln-button">ln</button>
 
                     <!-- Third row -->
-                    <button id="recBtn" class="rec-button">Rec</button>
-                    <button id="polBtn" class="pol-button">Pol</button>
+                    <button id="fractionBtn" class="fraction-button">
+                        <math>
+                            <mfrac>
+                              <mi>a</mi>
+                              <mi>b</mi>
+                            </mfrac>
+                          </math>                          
+                    </button>
+                    <button id="nRootBtn" class="n-root-button">
+                        <math>
+                            <mroot>
+                              <mi>a</mi>
+                              <mi>n</mi>
+                            </mroot>
+                          </math>                                                
+                    </button>
+                    <button id="squaredBtn" class="squared-button">x<sup>2</sup></button>
+                    <button id="elevateNBtn" class="elevate-n-button">x<sup>n</sup></button>
+                    <button id="lnBtn" class="ln-button">ln</button>
                     <button id="hypBtn" class="hyp-button">Hyp</button>
                     <button id="sinBtn" class="sin-button">sin</button>
                     <button id="cosBtn" class="cos-button">cos</button>
@@ -53,7 +69,7 @@
                     <button id="squareBtn" class="square-button">x²</button>
                     <button id="powerBtn" class="power-button">xʸ</button>
                     <button id="sqrtBtn" class="sqrt-button">√</button>
-                    <button id="logBtn" class="log-button">log</button>
+                    
 
                     <!-- Fifth row -->
                     <button id="fractionBtn" class="fraction-button">a/b</button>
