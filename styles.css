@@ -87,6 +87,7 @@ body {
 .calculator__brand-right-side p {
     font-size: 8px;
     margin: 4px 0 0 auto;
+    font-weight: bold;
 }
 
 .casing,
@@ -98,7 +99,6 @@ body {
     height: 100px;
     width: 100%;
     resize: none;
-    margin: 10px 0;
     background-color:#126349;
 }
 
