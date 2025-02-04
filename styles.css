@@ -4,6 +4,7 @@
 }
 
 body {
+    font-family: 'Arial', 'Verdana', sans-serif;
     box-sizing: border-box;
 }
 
@@ -14,21 +15,33 @@ body {
 
 .brand {
     font-size: 16px;
+    margin: 0 0 0 10px;
+}
+
+.calculator__brand {
+    margin: 0 8px;
 }
 
 .model {
-    margin-bottom: 5px;
+    font-family: 'Times New Roman';
+    font-style: italic;
+    margin: 16px 0 0 6px;
+    line-height: 1;
 }
 
 .model span {
-    font-size: 10px;
+    font-size: 9px;
     color: #016b4a;
+    margin-left: -6px;
+    font-weight: 600;
 
 }
 
 .solar-panel {
     background-color: black;
-    height: 80%;
+    height: 60%;
+    width: 150px;
+    border-radius: 6px;
 }
 
 .casing {
@@ -45,18 +58,40 @@ body {
 }
 
 .calculator__container {
-    margin: 0 8px;
+    margin: 5px 10px;
 }
 
 .calculator__brand {
     display: flex;
     justify-content: space-between;
-    outline: 1px solid red;
+}
+
+.calculator__brand-left-side {
+    flex-basis: 130px;
+}
+
+.calculator__brand-right-side {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator__brand-right-side p {
+    font-size: 10px;
+    margin: 4px 0 0 0;
 }
 
 .casing,
 .calculator {
     border-radius: 24px;
+}
+
+.calculator__screen {
+    width: 100%;
+    height: 100px;
+    border-radius: 10px;
 }
 
 /* Helpers */
