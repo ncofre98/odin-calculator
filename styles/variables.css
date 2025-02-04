@@ -1,0 +1,11 @@
+:root {
+    --main-color: #D1D1D3;
+    --secondary-color: #5D5A6B;
+    --font-family-primary: 'Arial', 'Verdana', sans-serif;
+    --font-family-secondary: 'Michroma', sans-serif;
+    --font-family-tertiary: 'Times New Roman';
+    --green-color: #016b4a;
+    --button-option-color: #7A7498;
+    --button-hover-color: #555;
+    --solar-panel-color: #4F342D;
+}

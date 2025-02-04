@@ -1,0 +1,40 @@
+body {
+    font-family: var(--font-family-primary);
+}
+
+.calculator__brand {
+    font-size: 16px;
+}
+
+.calculator__brand,
+.calculator__model span {
+    font-family: var(--font-family-secondary);
+}
+
+.calculator__model {
+    font-family: var(--font-family-tertiary);
+    font-size: 14px;
+    font-style: italic;
+    line-height: 1;
+}
+
+.calculator__model span {
+    font-size: 8px;
+    color: var(--green-color);
+    font-weight: bold;
+}
+
+.calculator__header-right-side p {
+    font-size: 8px;
+    margin: 4px 0 0 auto;
+    font-weight: bold;
+}
+
+.casing,
+.calculator {
+    border-radius: 24px;
+}
+
+.calculator__screen {
+    background-color:#126349;
+}

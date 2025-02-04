@@ -1,0 +1,17 @@
+.calculator__button {
+    font-size: 12px;
+    border: none;
+    padding: 6px;
+    border-radius: 8px;
+}
+
+.calculator__button--options {
+    background-color: var(--button-option-color);
+    color: #fff;
+}
+
+#replayBtn {
+    padding: 18px;
+    border-radius: 20px;
+    margin-bottom: -20px;
+}
