@@ -1,20 +1,57 @@
+:root {
+    --main-color: #B1B4B9;
+    --secondary-color: #5D5A6B;
+}
+
 body {
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh; */
+    box-sizing: border-box;
+}
+
+.brand,
+.model span {
+    font-family: 'Michroma', sans-serif;
+}
+
+.brand {
+    font-size: 16px;
+}
+
+.model {
+    margin-bottom: 5px;
+}
+
+.model span {
+    font-size: 10px;
+    color: #016b4a;
+
+}
+
+.solar-panel {
+    background-color: black;
+    height: 80%;
 }
 
 .casing {
-    background-color: #5A5D67;
-    width: 420px;
+    background-color: var(--secondary-color);
+    min-width: 320px;
+    max-width: 360px;
     height: 600px;
 }
 
 .calculator {
-    background-color: #A4A6A7;
+    background-color: var(--main-color);
     height: 98%;
     width: 95%;
+}
+
+.calculator__container {
+    margin: 0 8px;
+}
+
+.calculator__brand {
+    display: flex;
+    justify-content: space-between;
+    outline: 1px solid red;
 }
 
 .casing,
