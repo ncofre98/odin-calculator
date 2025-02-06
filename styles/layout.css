@@ -56,10 +56,6 @@
     margin-left: -6px;
 }
 
-.calculator__buttons {
-    /* gap: 5px; */
-}
-
 .calculator__button {
     margin-bottom: 8px;
 }
