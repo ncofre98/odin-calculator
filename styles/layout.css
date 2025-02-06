@@ -55,3 +55,25 @@
 .calculator__model span {
     margin-left: -6px;
 }
+
+.calculator__buttons {
+    /* gap: 5px; */
+}
+
+.calculator__button {
+    margin-bottom: 8px;
+}
+
+.calculator__buttons > .row:first-child,
+.calculator__buttons > .row:nth-child(5) {
+    margin: 8px 0;
+}
+
+.calculator__buttons > .row:nth-child(5) {
+    margin-top: 0;
+}
+
+.row {
+    display: flex;
+    gap: 0 10px;
+}

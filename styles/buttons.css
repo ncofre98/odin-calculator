@@ -1,17 +1,32 @@
 .calculator__button {
-    font-size: 12px;
+    font-size: 16px;
     border: none;
-    padding: 6px;
     border-radius: 8px;
+    padding: 8px 16px;
+    flex: 1;
 }
 
-.calculator__button--options {
-    background-color: var(--button-option-color);
+.calculator__button--option,
+.calculator__button--cientific {
     color: #fff;
+    font-size: 12px;
+}
+.calculator__button--option {
+    background-color: var(--button-option-color);
+    padding: 8px;
 }
 
-#replayBtn {
+.calculator__button--cientific {
+    background-color: var(--button-cientific-color);
+    padding: 4px;
+}
+
+ #replayBtn {
     padding: 18px;
     border-radius: 20px;
-    margin-bottom: -20px;
+    margin-bottom: -30px;
+}
+
+#integralDiferentialBtn {
+    margin-right: 110px;
 }

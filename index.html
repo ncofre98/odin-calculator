@@ -14,6 +14,7 @@
     <div class="casing is-centered">
         <main class="calculator">
             <div class="calculator__container">
+
                 <div class="calculator__header">
                     <div class="calculator__header-left-side">
                         <h1 class="calculator__brand">CASIO</h1>
@@ -25,86 +26,120 @@
                     </div>
                 </div>
                 <textarea name="" id="calculatorScreen" class="calculator__screen"></textarea>
+
                 <div class="calculator__buttons">
                     <!-- First row -->
-                    <button id="shiftBtn" class="calculator__button calculator__button--options">SHIFT</button>
-                    <button id="alphaBtn" class="calculator__button calculator__button--options">ALPHA</button>
-                    <button id="replayBtn" class="calculator__button calculator__button--options">REPLAY</button>
-                    <button id="modeSetupBtn" class="calculator__button calculator__button--options">MODE SETUP</button>
-                    <button id="onBtn" class="calculator__button calculator__button--options">ON</button>
+                    <div class="row">
+                        <button id="shiftBtn" class="calculator__button calculator__button--option">SHIFT</button>
+                        <button id="alphaBtn" class="calculator__button calculator__button--option">ALPHA</button>
+                        <button id="replayBtn" class="calculator__button calculator__button--option">REPLAY</button>
+                        <button id="modeSetupBtn" class="calculator__button calculator__button--option">MODE SETUP</button>
+                        <button id="onBtn" class="calculator__button calculator__button--option">ON</button>
+                    </div>
+
 
                     <!-- Second row -->
-                    <button id="calcBtn" class="calculator__button">CALC</button>
-                    <button id="integralDiferentialBtn" class="calculator__button">∫dx d/dx</button>
-                    <button id="inverseBtn" class="calculator__button">x<sup>-1</sup></button>
-                    <button id="logBaseBtn" class="calculator__button">logₐ</button>
+                    <div class="row">
+                        <button id="calcBtn" class="calculator__button calculator__button--cientific">CALC</button>
+                        <button id="integralDiferentialBtn" class="calculator__button calculator__button--cientific">∫dx
+                            d/dx</button>
+                        <button id="inverseBtn"
+                            class="calculator__button calculator__button--cientific">x<sup>-1</sup></button>
+                        <button id="logBaseBtn" class="calculator__button calculator__button--cientific">logₐ</button>
+                    </div>
+
 
                     <!-- Third row -->
-                    <button id="fractionBtn" class="calculator__button">
-                        <math>
-                            <mfrac>
-                                <mi>a</mi>
-                                <mi>b</mi>
-                            </mfrac>
-                        </math>
-                    </button>
-                    <button id="nRootBtn" class="calculator__button">
-                        <math>
-                            <mroot>
-                                <mi>a</mi>
-                                <mi>n</mi>
-                            </mroot>
-                        </math>
-                    </button>
-                    <button id="squaredBtn" class="calculator__button">x<sup>2</sup></button>
-                    <button id="elevateNBtn" class="calculator__button">x<sup>n</sup></button>
-                    <button id="logBtn" class="calculator__button">log</button>
-                    <button id="lnBtn" class="calculator__button">ln</button>
+                    <div class="row">
+                        <button id="fractionBtn" class="calculator__button calculator__button--cientific">
+                            <math>
+                                <mfrac>
+                                    <mi>a</mi>
+                                    <mi>b</mi>
+                                </mfrac>
+                            </math>
+                        </button>
+                        <button id="nRootBtn" class="calculator__button calculator__button--cientific">
+                            <math>
+                                <mroot>
+                                    <mi>a</mi>
+                                    <mi>n</mi>
+                                </mroot>
+                            </math>
+                        </button>
+                        <button id="squaredBtn"
+                            class="calculator__button calculator__button--cientific">x<sup>2</sup></button>
+                        <button id="elevateNBtn"
+                            class="calculator__button calculator__button--cientific">x<sup>n</sup></button>
+                        <button id="logBtn" class="calculator__button calculator__button--cientific">log</button>
+                        <button id="lnBtn" class="calculator__button calculator__button--cientific">ln</button>
+                    </div>
+
 
                     <!-- Fourth row -->
-                    <button id="negativeBtn" class="calculator__button">(-)</button>
-                    <button id="unitConversionBtn" class="calculator__button">°"""</button>
-                    <button id="hypherbolicBtn" class="calculator__button">Hyp</button>
-                    <button id="cosBtn" class="calculator__button">sin</button>
-                    <button id="cosBtn" class="calculator__button">cos</button>
-                    <button id="tanBtn" class="calculator__button">tan</button>
+                    <div class="row">
+                        <button id="negativeBtn" class="calculator__button calculator__button--cientific">(-)</button>
+                        <button id="unitConversionBtn"
+                            class="calculator__button calculator__button--cientific">°"""</button>
+                        <button id="hypherbolicBtn"
+                            class="calculator__button calculator__button--cientific">Hyp</button>
+                        <button id="cosBtn" class="calculator__button calculator__button--cientific">sin</button>
+                        <button id="cosBtn" class="calculator__button calculator__button--cientific">cos</button>
+                        <button id="tanBtn" class="calculator__button calculator__button--cientific">tan</button>
+
+                    </div>
 
                     <!-- Fifth row -->
-                    <button id="rclBtn" class="calculator__button">RCL</button>
-                    <button id="engBtn" class="calculator__button">ENG</button>
-                    <button id="parenOpenBtn" class="calculator__button">(</button>
-                    <button id="parenCloseBtn" class="calculator__button">)</button>
-                    <button id="sToDBtn" class="calculator__button">S<>D</button>
-                    <button id="mPlusBtn" class="calculator__button">M+</button>
+                    <div class="row">
+                        <button id="rclBtn" class="calculator__button calculator__button--cientific">RCL</button>
+                        <button id="engBtn" class="calculator__button calculator__button--cientific">ENG</button>
+                        <button id="parenOpenBtn" class="calculator__button calculator__button--cientific">(</button>
+                        <button id="parenCloseBtn" class="calculator__button calculator__button--cientific">)</button>
+                        <button id="sToDBtn" class="calculator__button calculator__button--cientific">S<>D</button>
+                        <button id="mPlusBtn" class="calculator__button calculator__button--cientific">M+</button>
+                    </div>
+
 
 
                     <!-- Sixth row -->
-                    <button id="sevenBtn" class="calculator__button">7</button>
-                    <button id="eightBtn" class="calculator__button">8</button>
-                    <button id="nineBtn" class="calculator__button">9</button>
-                    <button id="deleteBtn" class="calculator__button">DEL</button>
-                    <button id="acBtn" class="calculator__button">AC</button>
+                    <div class="row">
+                        <button id="sevenBtn" class="calculator__button">7</button>
+                        <button id="eightBtn" class="calculator__button">8</button>
+                        <button id="nineBtn" class="calculator__button">9</button>
+                        <button id="deleteBtn" class="calculator__button">DEL</button>
+                        <button id="acBtn" class="calculator__button">AC</button>
+                    </div>
+
 
                     <!-- Seventh row -->
-                    <button id="fourBtn" class="calculator__button">4</button>
-                    <button id="fiveBtn" class="calculator__button">5</button>
-                    <button id="sixBtn" class="calculator__button">6</button>
-                    <button id="multiplicationBtn" class="calculator__button">×</button>
-                    <button id="divisionBtn" class="calculator__button">÷</button>
+                    <div class="row">
+                        <button id="fourBtn" class="calculator__button">4</button>
+                        <button id="fiveBtn" class="calculator__button">5</button>
+                        <button id="sixBtn" class="calculator__button">6</button>
+                        <button id="multiplicationBtn" class="calculator__button">×</button>
+                        <button id="divisionBtn" class="calculator__button">÷</button>
+                    </div>
+
 
                     <!-- Eighth row -->
-                    <button id="oneBtn" class="calculator__button">1</button>
-                    <button id="twoBtn" class="calculator__button">2</button>
-                    <button id="threeBtn" class="calculator__button">3</button>
-                    <button id="additionBtn" class="calculator__button">+</button>
-                    <button id="subtractionBtn" class="calculator__button">-</button>
+                    <div class="row">
+                        <button id="oneBtn" class="calculator__button">1</button>
+                        <button id="twoBtn" class="calculator__button">2</button>
+                        <button id="threeBtn" class="calculator__button">3</button>
+                        <button id="additionBtn" class="calculator__button">+</button>
+                        <button id="subtractionBtn" class="calculator__button">-</button>
+                    </div>
+
 
                     <!-- Nineth row -->
-                    <button id="zeroBtn" class="calculator__button">0</button>
-                    <button id="dotBtn" class="calculator__button">.</button>
-                    <button id="cientificNotationBtn" class="calculator__button">×10ˣ</button>
-                    <button id="ansBtn" class="calculator__button">Ans</button>
-                    <button id="equalBtn" class="calculator__button">=</button>
+                    <div class="row">
+                        <button id="zeroBtn" class="calculator__button">0</button>
+                        <button id="dotBtn" class="calculator__button">.</button>
+                        <button id="cientificNotationBtn" class="calculator__button">×10ˣ</button>
+                        <button id="ansBtn" class="calculator__button">Ans</button>
+                        <button id="equalBtn" class="calculator__button">=</button>
+                    </div>
+
                 </div>
             </div>
         </main>
