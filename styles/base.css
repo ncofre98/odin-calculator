@@ -36,5 +36,6 @@ body {
 }
 
 .calculator__screen {
-    background-color:#126349;
+    background-color:var(--screen-color);
+    color: #1E265B;
 }
