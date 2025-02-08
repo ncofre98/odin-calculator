@@ -1,5 +1,5 @@
 export function updateDisplay(value) {
-    calculatorScreen.textContent = value;
+    calculatorScreen.value = value;
 }
 
 export function clearDisplay() {
