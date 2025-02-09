@@ -7,17 +7,19 @@ export function initEvents() {
     document.querySelectorAll('[class="calculator__button"]').forEach(button => {
         button.addEventListener('click', () => {
             const buttonPressed = button.textContent;
-            const currentScreen = calculatorScreen.value;
-            // console.log(buttonPressed);
+            const currentScreen = {
+                'insertions': insertions.textContent,
+                'results': results.textContent
+            };
 
             if (isNumber(buttonPressed)) {
-                if (!(currentScreen.length === 1 && buttonPressed == '0'))
-                    updateDisplay(currentScreen + buttonPressed);
+                if (!(currentScreen.insertions.length === 1 && buttonPressed == '0'))
+                    updateDisplay(currentScreen.insertions + buttonPressed, null);
             }
             else if (buttonPressed == 'AC')
                 clearDisplay();
-            else if (buttonPressed == 'DEL' && currentScreen > 1)
-                updateDisplay(currentScreen.substring(0,currentScreen.length - 1));
+            else if (buttonPressed == 'DEL' && currentScreen.insertions.length > 0)
+                updateDisplay(currentScreen.insertions.substring(0,currentScreen.insertions.length - 1));
         })
     })
 }
