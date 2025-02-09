@@ -16,7 +16,7 @@ export function initEvents() {
             }
             else if (buttonPressed == 'AC')
                 clearDisplay();
-            else if (buttonPressed == 'DEL')
+            else if (buttonPressed == 'DEL' && currentScreen > 1)
                 updateDisplay(currentScreen.substring(0,currentScreen.length - 1));
         })
     })

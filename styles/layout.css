@@ -47,9 +47,24 @@
 }
 
 .calculator__screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     height: 100px;
     width: 100%;
-    resize: none;
+}
+
+#insertions,
+#result {
+    margin: 0;
+}
+
+#insertions {
+    display: flex;
+}
+
+#result {
+    align-self: flex-end;
 }
 
 .calculator__model span {
@@ -74,13 +89,3 @@
     justify-content: center;
     gap: 0 10px;
 }
-
-.calculator__screen {
-    position: relative;
-}
-
-#result {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-  }
