@@ -1,5 +1,5 @@
 export function calculate(input) {
-    // return eval(input);
+    return eval(input);
 }
 
 function add(a, b) {
@@ -15,5 +15,7 @@ function multiply (a, b) {
 }
 
 function divide (a, b) {
+    if (b == 0)
+        return 'Error: Division by zero';
     return a / b;
 }

@@ -12,8 +12,10 @@ export function initEvents() {
                 'results': results.textContent
             };
 
+            // console.log(currentScreen.insertions[currentScreen.insertions.length - 1]);
+
             if (isNumber(buttonPressed) || isOperationSign(buttonPressed)) {
-                if (!(currentScreen.insertions.length === 1 && buttonPressed == '0'))
+                if (!(currentScreen.insertions.length === 1 && currentScreen.insertions[0] == '0' && buttonPressed == '0'))
                     updateDisplay(currentScreen.insertions + buttonPressed, null);
             }
             else if (buttonPressed == 'AC')
@@ -21,7 +23,7 @@ export function initEvents() {
             else if (buttonPressed == 'DEL' && currentScreen.insertions.length > 0)
                 updateDisplay(currentScreen.insertions.substring(0,currentScreen.insertions.length - 1));
             else if (buttonPressed == '=')
-                updateDisplay(null, 'Yet to be calculated');
+                updateDisplay(null, calculate(currentScreen.insertions));
         })
     })
 }

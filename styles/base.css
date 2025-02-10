@@ -39,13 +39,13 @@ body {
     background-color: var(--screen-color);
     color: #1E265B;
     padding: 0.4rem;
-    font-size: 2rem;
+    font-size: 1.2rem;
 }
 
 #insertions::after {
     content: "";
     width: 5px;
-    height: 2rem;
+    height: 1.5rem;
     background: var(--button-option-color);
     display: inline-block;
     animation: cursor-blink 1.5s steps(2) infinite;
