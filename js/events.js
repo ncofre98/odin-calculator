@@ -1,6 +1,6 @@
 import { clearDisplay, updateDisplay } from './ui.js';
 import { calculate } from './calculator.js';
-import { isNumber } from './helpers.js';
+import { isNumber, isOperationSign } from './helpers.js';
 
 export function initEvents() {
 
@@ -12,7 +12,7 @@ export function initEvents() {
                 'results': results.textContent
             };
 
-            if (isNumber(buttonPressed)) {
+            if (isNumber(buttonPressed) || isOperationSign(buttonPressed)) {
                 if (!(currentScreen.insertions.length === 1 && buttonPressed == '0'))
                     updateDisplay(currentScreen.insertions + buttonPressed, null);
             }
@@ -20,6 +20,8 @@ export function initEvents() {
                 clearDisplay();
             else if (buttonPressed == 'DEL' && currentScreen.insertions.length > 0)
                 updateDisplay(currentScreen.insertions.substring(0,currentScreen.insertions.length - 1));
+            else if (buttonPressed == '=')
+                updateDisplay(null, 'Yet to be calculated');
         })
     })
 }
