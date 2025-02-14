@@ -2,6 +2,8 @@ import { clearDisplay, updateDisplay } from './ui.js';
 import { calculate } from './calculator.js';
 import { isNumber, isSymbol } from './helpers.js';
 
+let ans = 0;
+
 export function initEvents() {
     document.querySelectorAll('[class="calculator__button"]').forEach(button => {
         button.addEventListener('click', () => {
@@ -24,10 +26,14 @@ export function initEvents() {
             else if (buttonPressed == '=') {
                 try {
                     const result = calculate(currentScreen.insertions);
-                    updateDisplay(null, result);
+                    ans = result;
+                    updateDisplay(result, result);
                 } catch (error) {
                     updateDisplay(null, "Error: " + error.message);
                 }
+            }
+            else if (buttonPressed == 'Ans') {
+                updateDisplay(currentScreen.insertions + ans, null);
             }
         });
     });
