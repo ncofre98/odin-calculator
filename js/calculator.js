@@ -1,21 +1,9 @@
-export function calculate(input) {
-    return eval(input);
+import { tokenize, parseExpression, evaluateTree } from './helpers.js';
+
+function calculate(expression) {
+    const tokens = tokenize(expression);  // Convert string to tokens
+    const tree = parseExpression(tokens); // Build tree
+    return evaluateTree(tree);
 }
 
-function add(a, b) {
-    return a + b;
-}
-
-function subtract (a, b) {
-    return a - b;
-}
-
-function multiply (a, b) {
-    return a * b;
-}
-
-function divide (a, b) {
-    if (b == 0)
-        return 'Error: Division by zero';
-    return a / b;
-}
+export { calculate };
